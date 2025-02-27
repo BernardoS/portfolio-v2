@@ -1,0 +1,121 @@
+:root{
+    --dark-brown:#1A120F;
+    --light-brown:#3B2C26;
+    --orange:#A36A3B;
+    --light-orange:#C17B3A;
+    --white:#D9D9D9;
+    --main-font: 'Poppins', Helvetica, sans-serif;
+}
+
+body{
+    background-color:var(--dark-brown);
+    margin:0;
+    padding:0;
+    color:var(--white);
+    font-family:var(--main-font);
+}
+
+main{
+    max-width:1250px;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    margin:auto;
+    padding-top:32px;
+}
+
+.left-panel{
+    width:33%;
+}
+
+.profile-section{
+    background-color:var(--light-brown);
+    padding:16px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+}
+
+.profile-body{
+    display:flex;
+    justify-content: space-between;
+}
+
+.profile-photo-container{
+    padding:16px;
+    width:50%;
+    box-sizing: border-box;
+}
+
+.profile-info-container{
+    padding:16px;
+    width:50%;
+    box-sizing: border-box;
+}
+
+.profile-info-container h1{
+    font-size:32px;
+    font-weight:800;
+    margin:0px;
+    line-height:normal;
+}
+
+.profile-info-container h2{
+    font-size:16px;
+    font-weight:200;
+    font-style:italic;
+    margin:0px;
+    line-height:normal;
+}
+
+.profile-footer{
+    display:flex;
+    padding:0px 32px;
+    gap:32px;
+}
+
+.navigation-section{
+    display:flex;
+    flex-direction:column;
+}
+
+.navigation-section h2{
+    font-size:48px;
+}
+
+.navigation-menu{
+    background-color:var(--light-brown);
+    border-radius:10px;
+    padding:16px;
+    display:flex;
+    flex-direction:row;
+    gap:4%;
+}
+
+.nav-link{
+    background-color:#A36A3B;
+    aspect-ratio:1/1;
+    display: flex;
+    width: 22%;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    gap:8px;
+    color:var(--white);
+    border-radius:10px;
+    transition:0.2s;
+}
+
+.nav-link:hover{
+    background-color:var(--light-orange);
+}
+
+.nav-link img{
+    width:26px;
+}
+
+.nav-link span{
+    font-size:11px;
+    font-weight:600;   
+}
