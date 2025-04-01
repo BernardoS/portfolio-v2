@@ -22,10 +22,13 @@ main{
     flex-direction: row;
     margin:auto;
     padding-top:32px;
+    position:relative;
 }
 
 .left-panel{
+    max-width:412.5px;
     width:33%;
+    top:16px;;
 }
 
 .profile-section{
@@ -67,6 +70,7 @@ main{
     font-weight:800;
     margin:0px;
     line-height:normal;
+    color:var(--light-brown);
 }
 
 .profile-info-container h1:hover{
@@ -76,10 +80,11 @@ main{
 
 .profile-info-container h2{
     font-size:16px;
-    font-weight:200;
+    font-weight:300;
     font-style:italic;
     margin:0px;
     line-height:normal;
+    color:var(--light-brown);
 }
 
 .profile-info-container h2:hover{
@@ -107,6 +112,7 @@ main{
     display:flex;
     padding:0px 32px;
     gap:32px;
+    color:var(--light-brown);
 }
 
 .navigation-section{
@@ -183,7 +189,7 @@ main{
 
 .contact-links{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     background-color:var(--orange);
     border-radius:10px;
     padding:16px;
@@ -199,9 +205,11 @@ main{
     align-items:center;
     justify-content:center;
     border-radius:10px;
-    gap:16px;
+    gap:8px;
     text-decoration:none;
     color:var(--white);
+    font-size:11px;
+    font-weight:600;
 }
 
 .contact-link:hover{
@@ -210,5 +218,10 @@ main{
 }
 
 .contact-link img{
-    width:32px;
+    width:24px;
+}
+
+.right-panel{
+    margin-left:8%;
+    width:49%;
 }
